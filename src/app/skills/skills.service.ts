@@ -200,7 +200,7 @@ export class SkillsService {
     // 🚀 Deployment & Hosting
     {
       title: 'Render',
-      image: 'images/icons/render-icon.png',
+      image: 'images/icons/render-icon.jpg',
       category: 'Deployment & Hosting',
       subCategory: 'Cloud Hosting',
       alt: 'Render Icon',
@@ -217,31 +217,31 @@ export class SkillsService {
     {
       title: 'Matplotlib',
       image: 'images/icons/matplotlib-icon.png',
-      category: 'Data Science & Machine Learning',
+      category: 'Data Science',
       subCategory: 'Visualization',
       alt: 'Matplotlib Icon',
     },
     {
       title: 'NumPy',
       image: 'images/icons/numpy-icon.png',
-      category: 'Data Science & Machine Learning',
+      category: 'Data Science',
       subCategory: 'Mathematics / Arrays',
       alt: 'NumPy Icon',
     },
     {
       title: 'Pandas',
       image: 'images/icons/pandas-icon.png',
-      category: 'Data Science & Machine Learning',
+      category: 'Data Science',
       subCategory: 'Data Analysis',
       alt: 'Pandas Icon',
     },
-    {
-      title: 'scikit-learn',
-      image: 'images/icons/scikit-learn-icon.png',
-      category: 'Data Science & Machine Learning',
-      subCategory: 'Machine Learning',
-      alt: 'scikit-learn Icon',
-    },
+    // {
+    //   title: 'scikit-learn',
+    //   image: 'images/icons/scikit-icon.jpg',
+    //   category: 'Data Science & Machine Learning',
+    //   subCategory: 'Machine Learning',
+    //   alt: 'scikit-learn Icon',
+    // },
 
     // 🎨 Design & UI/UX
     {
@@ -258,13 +258,13 @@ export class SkillsService {
       subCategory: 'Prototyping',
       alt: 'Figma Icon',
     },
-    {
-      title: 'Dribbble',
-      image: 'images/icons/dribbble-icon.png',
-      category: 'Design & UI/UX',
-      subCategory: 'Inspiration',
-      alt: 'Dribbble Icon',
-    },
+    // {
+    //   title: 'Dribbble',
+    //   image: 'images/icons/dribbble-icon.png',
+    //   category: 'Design & UI/UX',
+    //   subCategory: 'Inspiration',
+    //   alt: 'Dribbble Icon',
+    // },
 
     // 📂 Collaboration & Productivity Tools
     {
@@ -329,10 +329,10 @@ export class SkillsService {
     return skillsObj;
   }
 
-  getFilteredCategory(category: string) {
+  getFilteredCategory(category: String) {
     return this.skills.filter((skill) => skill.category == category);
   }
-  getFilteredSubcategory(subCategory: string) {
+  getFilteredSubcategory(subCategory: String) {
     return this.skills.filter((skill) => skill.subCategory == subCategory);
   }
 }

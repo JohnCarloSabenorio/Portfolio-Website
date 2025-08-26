@@ -12,26 +12,26 @@ import { BadgeComponent } from './badge/badge.component';
   styleUrl: './skills.component.css',
 })
 export class SkillsComponent {
-  selectedCategory: String = '';
+  selectedCategory = signal('');
   allSkills: { [key: string]: Skill[] } = {};
 
-  skillsArray = [];
-
-  categories: String[] = [];
+  categories: string[] = [];
 
   constructor(private skillsService: SkillsService) {
     this.allSkills = skillsService.getCategorizedSkills();
     this.categories = Object.keys(this.allSkills);
 
-    this.selectedCategory = this.categories[1];
+    this.selectedCategory.set(this.categories[0]);
   }
 
-  changeSelectedCategory() {}
+  changeSelectedCategory(idx: number) {
+    this.selectedCategory.set(this.categories[idx]);
+  }
 
-  getFilteredCategory(category: string) {
+  getFilteredCategory(category: String) {
     return this.skillsService.getFilteredCategory(category);
   }
-  getFilteredSubcategory(subCategory: string) {
+  getFilteredSubcategory(subCategory: String) {
     return this.skillsService.getFilteredSubcategory(subCategory);
   }
 }
