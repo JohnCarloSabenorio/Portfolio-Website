@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
   styleUrl: './badge.component.css',
 })
 export class BadgeComponent {
-  @Input({ required: true }) image!: string;
-  @Input({ required: true }) alt!: string;
-  @Input({ required: true }) label!: string;
+  @Input({ required: true }) image!: String;
+  @Input({ required: true }) alt!: String;
+  @Input({ required: true }) label!: String;
 }

@@ -3,276 +3,330 @@ import { Skill } from './skill.model';
 @Injectable({ providedIn: 'root' })
 export class SkillsService {
   skills = [
+    // 🖥 Programming Languages
     {
       title: 'C#',
-      image: '',
+      image: 'images/icons/csharp-icon.png',
       category: 'Programming Languages',
       subCategory: '',
+      alt: 'C# Icon',
     },
     {
-      title: 'CSS3',
-      image: '',
+      title: 'CSS',
+      image: 'images/icons/css-icon.png',
       category: 'Programming Languages',
       subCategory: '',
+      alt: 'CSS Icon',
     },
     {
-      title: 'HTML5',
-      image: '',
+      title: 'HTML',
+      image: 'images/icons/html-icon.png',
       category: 'Programming Languages',
       subCategory: '',
+      alt: 'HTML5 Icon',
     },
     {
       title: 'Java',
-      image: '',
+      image: 'images/icons/java-icon.png',
       category: 'Programming Languages',
       subCategory: '',
+      alt: 'Java Icon',
     },
     {
       title: 'JavaScript',
-      image: '',
+      image: 'images/icons/js-icon.png',
       category: 'Programming Languages',
       subCategory: '',
+      alt: 'JavaScript Icon',
     },
     {
       title: 'PHP',
-      image: '',
+      image: 'images/icons/php-icon.png',
       category: 'Programming Languages',
       subCategory: '',
-    },
-    {
-      title: 'PowerShell',
-      image: '',
-      category: 'Programming Languages',
-      subCategory: '',
+      alt: 'PHP Icon',
     },
     {
       title: 'Python',
-      image: '',
+      image: 'images/icons/python-icon.png',
       category: 'Programming Languages',
       subCategory: '',
+      alt: 'Python Icon',
     },
     {
       title: 'Ruby',
-      image: '',
+      image: 'images/icons/ruby-icon.png',
       category: 'Programming Languages',
       subCategory: '',
+      alt: 'Ruby Icon',
     },
     {
       title: 'TypeScript',
-      image: '',
+      image: 'images/icons/ts-icon.png',
       category: 'Programming Languages',
       subCategory: '',
+      alt: 'TypeScript Icon',
     },
 
     // ⚙️ Frameworks & Libraries → Frontend
     {
       title: 'Angular.js',
-      image: '',
+      image: 'images/icons/angular-icon.png',
       category: 'Frameworks & Libraries',
       subCategory: 'Frontend',
+      alt: 'Angular.js Icon',
     },
     {
       title: 'Bootstrap',
-      image: '',
+      image: 'images/icons/bootstrap-icon.png',
       category: 'Frameworks & Libraries',
       subCategory: 'Frontend',
+      alt: 'Bootstrap Icon',
     },
     {
       title: 'Chart.js',
-      image: '',
+      image: 'images/icons/chartjs-icon.png',
       category: 'Frameworks & Libraries',
       subCategory: 'Frontend',
+      alt: 'Chart.js Icon',
     },
     {
       title: 'React',
-      image: '',
+      image: 'images/icons/react-icon.png',
       category: 'Frameworks & Libraries',
       subCategory: 'Frontend',
+      alt: 'React Icon',
     },
     {
       title: 'React Router',
-      image: '',
+      image: 'images/icons/reactrouter-icon.png',
       category: 'Frameworks & Libraries',
       subCategory: 'Frontend',
+      alt: 'React Router Icon',
     },
     {
       title: 'Redux',
-      image: '',
+      image: 'images/icons/redux-icon.png',
       category: 'Frameworks & Libraries',
       subCategory: 'Frontend',
+      alt: 'Redux Icon',
     },
     {
       title: 'TailwindCSS',
-      image: '',
+      image: 'images/icons/tailwind-icon.png',
       category: 'Frameworks & Libraries',
       subCategory: 'Frontend',
+      alt: 'TailwindCSS Icon',
     },
 
     // ⚙️ Frameworks & Libraries → Backend
     {
       title: 'Express.js',
-      image: '',
+      image: 'images/icons/expressjs-icon.png',
       category: 'Frameworks & Libraries',
       subCategory: 'Backend',
+      alt: 'Express.js Icon',
     },
     {
       title: 'Flask',
-      image: '',
+      image: 'images/icons/flask-icon.png',
       category: 'Frameworks & Libraries',
       subCategory: 'Backend',
+      alt: 'Flask Icon',
     },
     {
       title: 'Socket.io',
-      image: '',
+      image: 'images/icons/socket-icon.png',
       category: 'Frameworks & Libraries',
       subCategory: 'Backend',
+      alt: 'Socket.io Icon',
     },
 
     // ⚙️ Frameworks & Libraries → Fullstack / Meta-frameworks
     {
       title: 'Next.js',
-      image: '',
+      image: 'images/icons/nextjs-icon.png',
       category: 'Frameworks & Libraries',
       subCategory: 'Fullstack / Meta-frameworks',
+      alt: 'Next.js Icon',
     },
     {
       title: 'Vite',
-      image: '',
+      image: 'images/icons/vite-icon.png',
       category: 'Frameworks & Libraries',
       subCategory: 'Fullstack / Meta-frameworks',
+      alt: 'Vite Icon',
     },
 
     // ⚙️ Frameworks & Libraries → Utilities
     {
-      title: 'JWT (JSON Web Token)',
-      image: '',
+      title: 'JWT',
+      image: 'images/icons/jwt-icon.png',
       category: 'Frameworks & Libraries',
       subCategory: 'Utilities',
-    },
-    {
-      title: 'Nodemon',
-      image: '',
-      category: 'Frameworks & Libraries',
-      subCategory: 'Utilities',
-    },
-    {
-      title: 'NPM',
-      image: '',
-      category: 'Frameworks & Libraries',
-      subCategory: 'Utilities',
+      alt: 'JWT Icon',
     },
 
     // 🗄️ Databases & Storage
     {
       title: 'MongoDB',
-      image: '',
+      image: 'images/icons/mongodb-icon.png',
       category: 'Databases & Storage',
-      subCategory: '',
+      subCategory: 'NoSQL',
+      alt: 'MongoDB Icon',
     },
     {
       title: 'MySQL',
-      image: '',
+      image: 'images/icons/mysql-icon.png',
       category: 'Databases & Storage',
-      subCategory: '',
+      subCategory: 'Relational',
+      alt: 'MySQL Icon',
     },
     {
       title: 'Postgres',
-      image: '',
+      image: 'images/icons/postgres-icon.png',
       category: 'Databases & Storage',
-      subCategory: '',
+      subCategory: 'Relational',
+      alt: 'Postgres Icon',
     },
     {
       title: 'Supabase',
-      image: '',
+      image: 'images/icons/supabase-icon.png',
       category: 'Databases & Storage',
-      subCategory: '',
+      subCategory: 'Backend as a Service',
+      alt: 'Supabase Icon',
     },
 
     // 🚀 Deployment & Hosting
     {
       title: 'Render',
-      image: '',
+      image: 'images/icons/render-icon.png',
       category: 'Deployment & Hosting',
-      subCategory: '',
+      subCategory: 'Cloud Hosting',
+      alt: 'Render Icon',
     },
     {
       title: 'Vercel',
-      image: '',
+      image: 'images/icons/vercel-icon.png',
       category: 'Deployment & Hosting',
-      subCategory: '',
+      subCategory: 'Cloud Hosting',
+      alt: 'Vercel Icon',
     },
 
     // 📊 Data Science & Machine Learning
     {
       title: 'Matplotlib',
-      image: '',
+      image: 'images/icons/matplotlib-icon.png',
       category: 'Data Science & Machine Learning',
-      subCategory: '',
+      subCategory: 'Visualization',
+      alt: 'Matplotlib Icon',
     },
     {
       title: 'NumPy',
-      image: '',
+      image: 'images/icons/numpy-icon.png',
       category: 'Data Science & Machine Learning',
-      subCategory: '',
+      subCategory: 'Mathematics / Arrays',
+      alt: 'NumPy Icon',
     },
     {
       title: 'Pandas',
-      image: '',
+      image: 'images/icons/pandas-icon.png',
       category: 'Data Science & Machine Learning',
-      subCategory: '',
+      subCategory: 'Data Analysis',
+      alt: 'Pandas Icon',
     },
     {
       title: 'scikit-learn',
-      image: '',
+      image: 'images/icons/scikit-learn-icon.png',
       category: 'Data Science & Machine Learning',
-      subCategory: '',
+      subCategory: 'Machine Learning',
+      alt: 'scikit-learn Icon',
     },
 
     // 🎨 Design & UI/UX
-    { title: 'Canva', image: '', category: 'Design & UI/UX', subCategory: '' },
-    { title: 'Figma', image: '', category: 'Design & UI/UX', subCategory: '' },
+    {
+      title: 'Canva',
+      image: 'images/icons/canva-icon.png',
+      category: 'Design & UI/UX',
+      subCategory: 'Graphic Design',
+      alt: 'Canva Icon',
+    },
+    {
+      title: 'Figma',
+      image: 'images/icons/figma-icon.png',
+      category: 'Design & UI/UX',
+      subCategory: 'Prototyping',
+      alt: 'Figma Icon',
+    },
     {
       title: 'Dribbble',
-      image: '',
+      image: 'images/icons/dribbble-icon.png',
       category: 'Design & UI/UX',
-      subCategory: '',
+      subCategory: 'Inspiration',
+      alt: 'Dribbble Icon',
     },
 
     // 📂 Collaboration & Productivity Tools
     {
-      title: 'Git',
-      image: '',
+      title: 'PowerShell',
+      image: 'images/icons/powershell-icon.png',
       category: 'Collaboration & Productivity Tools',
-      subCategory: '',
+      subCategory: 'Scripting / Automation',
+      alt: 'PowerShell Icon',
+    },
+    {
+      title: 'Git',
+      image: 'images/icons/git-icon.png',
+      category: 'Collaboration & Productivity Tools',
+      subCategory: 'Version Control',
+      alt: 'Git Icon',
     },
     {
       title: 'GitHub',
-      image: '',
+      image: 'images/icons/github-icon.png',
       category: 'Collaboration & Productivity Tools',
-      subCategory: '',
+      subCategory: 'Version Control Hosting',
+      alt: 'GitHub Icon',
     },
     {
       title: 'Notion',
-      image: '',
+      image: 'images/icons/notion-icon.png',
       category: 'Collaboration & Productivity Tools',
-      subCategory: '',
+      subCategory: 'Documentation / Notes',
+      alt: 'Notion Icon',
     },
     {
       title: 'Postman',
-      image: '',
+      image: 'images/icons/postman-icon.png',
       category: 'Collaboration & Productivity Tools',
-      subCategory: '',
+      subCategory: 'API Testing',
+      alt: 'Postman Icon',
     },
     {
       title: 'Trello',
-      image: '',
+      image: 'images/icons/trello-icon.png',
       category: 'Collaboration & Productivity Tools',
-      subCategory: '',
+      subCategory: 'Project Management',
+      alt: 'Trello Icon',
     },
   ];
 
   getCategories(): String[] {
     return [...new Set(this.skills.map((skill) => skill.category))];
+  }
+
+  getCategorizedSkills(): { [key: string]: Skill[] } {
+    let skillsObj: { [key: string]: Skill[] } = {};
+
+    this.skills.forEach((skill) => {
+      if (skill.category in skillsObj) {
+        skillsObj[skill.category].push(skill);
+      } else {
+        skillsObj[skill.category] = [skill];
+      }
+    });
+
+    return skillsObj;
   }
 
   getFilteredCategory(category: string) {

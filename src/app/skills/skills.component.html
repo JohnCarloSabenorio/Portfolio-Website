@@ -2,18 +2,20 @@
   <h1 class="text-5xl text-center font-semibold">Skills</h1>
 
   <!-- Categories -->
-  <div class="flex flex-wrap justify-evenly gap-4 mt-3">
+  <div class="flex flex-wrap justify-evenly gap-4 mt-3 px-10">
     <ng-container *ngFor="let category of categories">
       <app-category [label]="category" />
     </ng-container>
   </div>
 
   <!-- Badges -->
-  <div class="flex flex-wrap justify-evenly mt-5">
-    <app-badge
-      [image]="'images/icons/css-icon.png'"
-      [alt]="'CSS Icon'"
-      [label]="'CSS'"
-    />
+  <div class="grid grid-cols-6 gap-5 mt-8">
+    <ng-container *ngFor="let language of allSkills[`${selectedCategory}`]">
+      <app-badge
+        [image]="language.image"
+        [alt]="language.alt"
+        [label]="language.title"
+      />
+    </ng-container>
   </div>
 </div>
