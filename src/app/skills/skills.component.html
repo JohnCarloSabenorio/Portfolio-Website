@@ -1,1 +1,19 @@
-<p>skills works!</p>
+<div class="bg-amber-200 h-200 w-full py-8">
+  <h1 class="text-5xl text-center font-semibold">Skills</h1>
+
+  <!-- Categories -->
+  <div class="flex flex-wrap justify-evenly gap-4 mt-3">
+    <ng-container *ngFor="let category of categories">
+      <app-category [label]="category" />
+    </ng-container>
+  </div>
+
+  <!-- Badges -->
+  <div class="flex flex-wrap justify-evenly mt-5">
+    <app-badge
+      [image]="'images/icons/css-icon.png'"
+      [alt]="'CSS Icon'"
+      [label]="'CSS'"
+    />
+  </div>
+</div>
