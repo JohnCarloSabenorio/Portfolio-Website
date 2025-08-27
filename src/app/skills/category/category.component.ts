@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Signal, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-category',
@@ -8,9 +8,12 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 })
 export class CategoryComponent {
   @Input({ required: true }) label!: String;
+  @Input({ required: true }) categoryIndex!: number;
+  @Input({ required: true }) selectedCategory!: number;
+
   @Output() clickEvent = new EventEmitter<number>();
 
   changeCategory() {
-    this.clickEvent.emit();
+    this.clickEvent.emit(this.categoryIndex);
   }
 }

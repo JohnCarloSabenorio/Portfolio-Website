@@ -10,6 +10,7 @@ export class SkillsService {
       category: 'Programming Languages',
       subCategory: '',
       alt: 'C# Icon',
+      categoryIndex: 1,
     },
     {
       title: 'CSS',
@@ -17,6 +18,7 @@ export class SkillsService {
       category: 'Programming Languages',
       subCategory: '',
       alt: 'CSS Icon',
+      categoryIndex: 1,
     },
     {
       title: 'HTML',
@@ -24,6 +26,7 @@ export class SkillsService {
       category: 'Programming Languages',
       subCategory: '',
       alt: 'HTML5 Icon',
+      categoryIndex: 1,
     },
     {
       title: 'Java',
@@ -31,6 +34,7 @@ export class SkillsService {
       category: 'Programming Languages',
       subCategory: '',
       alt: 'Java Icon',
+      categoryIndex: 1,
     },
     {
       title: 'JavaScript',
@@ -38,6 +42,7 @@ export class SkillsService {
       category: 'Programming Languages',
       subCategory: '',
       alt: 'JavaScript Icon',
+      categoryIndex: 1,
     },
     {
       title: 'PHP',
@@ -45,6 +50,7 @@ export class SkillsService {
       category: 'Programming Languages',
       subCategory: '',
       alt: 'PHP Icon',
+      categoryIndex: 1,
     },
     {
       title: 'Python',
@@ -52,6 +58,7 @@ export class SkillsService {
       category: 'Programming Languages',
       subCategory: '',
       alt: 'Python Icon',
+      categoryIndex: 1,
     },
     {
       title: 'Ruby',
@@ -59,6 +66,7 @@ export class SkillsService {
       category: 'Programming Languages',
       subCategory: '',
       alt: 'Ruby Icon',
+      categoryIndex: 1,
     },
     {
       title: 'TypeScript',
@@ -66,6 +74,7 @@ export class SkillsService {
       category: 'Programming Languages',
       subCategory: '',
       alt: 'TypeScript Icon',
+      categoryIndex: 1,
     },
 
     // ⚙️ Frameworks & Libraries → Frontend
@@ -75,6 +84,7 @@ export class SkillsService {
       category: 'Frameworks & Libraries',
       subCategory: 'Frontend',
       alt: 'Angular.js Icon',
+      categoryIndex: 2,
     },
     {
       title: 'Bootstrap',
@@ -82,6 +92,7 @@ export class SkillsService {
       category: 'Frameworks & Libraries',
       subCategory: 'Frontend',
       alt: 'Bootstrap Icon',
+      categoryIndex: 2,
     },
     {
       title: 'Chart.js',
@@ -89,6 +100,7 @@ export class SkillsService {
       category: 'Frameworks & Libraries',
       subCategory: 'Frontend',
       alt: 'Chart.js Icon',
+      categoryIndex: 2,
     },
     {
       title: 'React',
@@ -96,6 +108,7 @@ export class SkillsService {
       category: 'Frameworks & Libraries',
       subCategory: 'Frontend',
       alt: 'React Icon',
+      categoryIndex: 2,
     },
     {
       title: 'React Router',
@@ -103,6 +116,7 @@ export class SkillsService {
       category: 'Frameworks & Libraries',
       subCategory: 'Frontend',
       alt: 'React Router Icon',
+      categoryIndex: 2,
     },
     {
       title: 'Redux',
@@ -110,6 +124,7 @@ export class SkillsService {
       category: 'Frameworks & Libraries',
       subCategory: 'Frontend',
       alt: 'Redux Icon',
+      categoryIndex: 2,
     },
     {
       title: 'TailwindCSS',
@@ -117,6 +132,7 @@ export class SkillsService {
       category: 'Frameworks & Libraries',
       subCategory: 'Frontend',
       alt: 'TailwindCSS Icon',
+      categoryIndex: 2,
     },
 
     // ⚙️ Frameworks & Libraries → Backend
@@ -126,6 +142,7 @@ export class SkillsService {
       category: 'Frameworks & Libraries',
       subCategory: 'Backend',
       alt: 'Express.js Icon',
+      categoryIndex: 2,
     },
     {
       title: 'Flask',
@@ -133,6 +150,7 @@ export class SkillsService {
       category: 'Frameworks & Libraries',
       subCategory: 'Backend',
       alt: 'Flask Icon',
+      categoryIndex: 2,
     },
     {
       title: 'Socket.io',
@@ -140,6 +158,7 @@ export class SkillsService {
       category: 'Frameworks & Libraries',
       subCategory: 'Backend',
       alt: 'Socket.io Icon',
+      categoryIndex: 2,
     },
 
     // ⚙️ Frameworks & Libraries → Fullstack / Meta-frameworks
@@ -149,6 +168,7 @@ export class SkillsService {
       category: 'Frameworks & Libraries',
       subCategory: 'Fullstack / Meta-frameworks',
       alt: 'Next.js Icon',
+      categoryIndex: 2,
     },
     {
       title: 'Vite',
@@ -156,6 +176,7 @@ export class SkillsService {
       category: 'Frameworks & Libraries',
       subCategory: 'Fullstack / Meta-frameworks',
       alt: 'Vite Icon',
+      categoryIndex: 2,
     },
 
     // ⚙️ Frameworks & Libraries → Utilities
@@ -165,6 +186,7 @@ export class SkillsService {
       category: 'Frameworks & Libraries',
       subCategory: 'Utilities',
       alt: 'JWT Icon',
+      categoryIndex: 2,
     },
 
     // 🗄️ Databases & Storage
@@ -174,6 +196,7 @@ export class SkillsService {
       category: 'Databases & Storage',
       subCategory: 'NoSQL',
       alt: 'MongoDB Icon',
+      categoryIndex: 3,
     },
     {
       title: 'MySQL',
@@ -181,6 +204,7 @@ export class SkillsService {
       category: 'Databases & Storage',
       subCategory: 'Relational',
       alt: 'MySQL Icon',
+      categoryIndex: 3,
     },
     {
       title: 'Postgres',
@@ -188,6 +212,7 @@ export class SkillsService {
       category: 'Databases & Storage',
       subCategory: 'Relational',
       alt: 'Postgres Icon',
+      categoryIndex: 3,
     },
     {
       title: 'Supabase',
@@ -195,6 +220,7 @@ export class SkillsService {
       category: 'Databases & Storage',
       subCategory: 'Backend as a Service',
       alt: 'Supabase Icon',
+      categoryIndex: 3,
     },
 
     // 🚀 Deployment & Hosting
@@ -204,6 +230,7 @@ export class SkillsService {
       category: 'Deployment & Hosting',
       subCategory: 'Cloud Hosting',
       alt: 'Render Icon',
+      categoryIndex: 4,
     },
     {
       title: 'Vercel',
@@ -211,6 +238,7 @@ export class SkillsService {
       category: 'Deployment & Hosting',
       subCategory: 'Cloud Hosting',
       alt: 'Vercel Icon',
+      categoryIndex: 4,
     },
 
     // 📊 Data Science & Machine Learning
@@ -220,6 +248,7 @@ export class SkillsService {
       category: 'Data Science',
       subCategory: 'Visualization',
       alt: 'Matplotlib Icon',
+      categoryIndex: 5,
     },
     {
       title: 'NumPy',
@@ -227,6 +256,7 @@ export class SkillsService {
       category: 'Data Science',
       subCategory: 'Mathematics / Arrays',
       alt: 'NumPy Icon',
+      categoryIndex: 5,
     },
     {
       title: 'Pandas',
@@ -234,14 +264,8 @@ export class SkillsService {
       category: 'Data Science',
       subCategory: 'Data Analysis',
       alt: 'Pandas Icon',
+      categoryIndex: 5,
     },
-    // {
-    //   title: 'scikit-learn',
-    //   image: 'images/icons/scikit-icon.jpg',
-    //   category: 'Data Science & Machine Learning',
-    //   subCategory: 'Machine Learning',
-    //   alt: 'scikit-learn Icon',
-    // },
 
     // 🎨 Design & UI/UX
     {
@@ -250,6 +274,7 @@ export class SkillsService {
       category: 'Design & UI/UX',
       subCategory: 'Graphic Design',
       alt: 'Canva Icon',
+      categoryIndex: 6,
     },
     {
       title: 'Figma',
@@ -257,14 +282,8 @@ export class SkillsService {
       category: 'Design & UI/UX',
       subCategory: 'Prototyping',
       alt: 'Figma Icon',
+      categoryIndex: 6,
     },
-    // {
-    //   title: 'Dribbble',
-    //   image: 'images/icons/dribbble-icon.png',
-    //   category: 'Design & UI/UX',
-    //   subCategory: 'Inspiration',
-    //   alt: 'Dribbble Icon',
-    // },
 
     // 📂 Collaboration & Productivity Tools
     {
@@ -273,6 +292,7 @@ export class SkillsService {
       category: 'Collaboration & Productivity Tools',
       subCategory: 'Scripting / Automation',
       alt: 'PowerShell Icon',
+      categoryIndex: 7,
     },
     {
       title: 'Git',
@@ -280,6 +300,7 @@ export class SkillsService {
       category: 'Collaboration & Productivity Tools',
       subCategory: 'Version Control',
       alt: 'Git Icon',
+      categoryIndex: 7,
     },
     {
       title: 'GitHub',
@@ -287,6 +308,7 @@ export class SkillsService {
       category: 'Collaboration & Productivity Tools',
       subCategory: 'Version Control Hosting',
       alt: 'GitHub Icon',
+      categoryIndex: 7,
     },
     {
       title: 'Notion',
@@ -294,6 +316,7 @@ export class SkillsService {
       category: 'Collaboration & Productivity Tools',
       subCategory: 'Documentation / Notes',
       alt: 'Notion Icon',
+      categoryIndex: 7,
     },
     {
       title: 'Postman',
@@ -301,6 +324,7 @@ export class SkillsService {
       category: 'Collaboration & Productivity Tools',
       subCategory: 'API Testing',
       alt: 'Postman Icon',
+      categoryIndex: 7,
     },
     {
       title: 'Trello',
@@ -308,21 +332,30 @@ export class SkillsService {
       category: 'Collaboration & Productivity Tools',
       subCategory: 'Project Management',
       alt: 'Trello Icon',
+      categoryIndex: 7,
     },
   ];
 
-  getCategories(): String[] {
-    return [...new Set(this.skills.map((skill) => skill.category))];
-  }
-
-  getCategorizedSkills(): { [key: string]: Skill[] } {
-    let skillsObj: { [key: string]: Skill[] } = {};
+  getCategories(): { [key: number]: String } {
+    let categoriesObj: { [key: number]: String } = {};
 
     this.skills.forEach((skill) => {
-      if (skill.category in skillsObj) {
-        skillsObj[skill.category].push(skill);
+      if (!(skill.categoryIndex in categoriesObj)) {
+        categoriesObj[skill.categoryIndex] = skill.category;
+      }
+    });
+
+    return categoriesObj;
+  }
+
+  getCategorizedSkills(): { [key: number]: Skill[] } {
+    let skillsObj: { [key: number]: Skill[] } = {};
+
+    this.skills.forEach((skill) => {
+      if (skill.categoryIndex in skillsObj) {
+        skillsObj[skill.categoryIndex].push(skill);
       } else {
-        skillsObj[skill.category] = [skill];
+        skillsObj[skill.categoryIndex] = [skill];
       }
     });
 

@@ -1,6 +1,11 @@
-<button
+<div
   (click)="changeCategory()"
-  class="bg-gray-700 text-white px-4 py-2 rounded-md hover:bg-gray-400 cursor-pointer"
+  class="p-5 hover:bg-gray-400 cursor-pointer rounded-md"
+  [class]="
+    selectedCategory == categoryIndex
+      ? 'bg-gray-400 text-black'
+      : 'bg-gray-700 text-white'
+  "
 >
   {{ label }}
-</button>
+</div>
