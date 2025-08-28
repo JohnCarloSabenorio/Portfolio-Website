@@ -4,7 +4,7 @@ import { Skill } from './skill.model';
 export class SkillsService {
   skills = [
     // 🖥 Programming Languages
-    {
+    { 
       title: 'C#',
       image: 'images/icons/csharp-icon.png',
       category: 'Programming Languages',
