@@ -4,7 +4,7 @@ import { Skill } from './skill.model';
 export class SkillsService {
   skills = [
     // 🖥 Programming Languages
-    { 
+    {
       title: 'C#',
       image: 'images/icons/csharp-icon.png',
       category: 'Programming Languages',
@@ -103,7 +103,15 @@ export class SkillsService {
       categoryIndex: 2,
     },
     {
-      title: 'React',
+      title: 'Node.js',
+      image: 'images/icons/node-icon.png',
+      category: 'Frameworks & Libraries',
+      subCategory: 'Backend',
+      alt: 'Node.js Icon',
+      categoryIndex: 2,
+    },
+    {
+      title: 'React.js',
       image: 'images/icons/react-icon.png',
       category: 'Frameworks & Libraries',
       subCategory: 'Frontend',
