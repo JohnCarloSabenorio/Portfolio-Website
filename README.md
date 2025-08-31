@@ -35,7 +35,7 @@ A personal **portfolio website** built with **Angular**, showcasing my journey a
 - **TypeScript** – Primary language
 - **HTML5 & CSS3** – Structure and styling
 - **JavaScript** – Interactivity
-- **Bootstrap / Tailwind (if used)** – Styling and responsiveness
+- **Tailwind** – Styling and responsiveness
 
 ---
 
