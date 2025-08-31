@@ -1,11 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-intro',
   imports: [],
   templateUrl: './intro.component.html',
-  styleUrl: './intro.component.css'
+  styleUrl: './intro.component.css',
 })
-export class IntroComponent {
-
-}
+export class IntroComponent {}

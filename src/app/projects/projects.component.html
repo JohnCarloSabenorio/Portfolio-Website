@@ -1,9 +1,9 @@
 <div
   id="projects-section"
-  class="w-full flex justify-center items-center bg-red-200"
+  class="app-section flex justify-center items-center h-screen"
 >
-  <div class="w-full py-8">
-    <h1 class="text-center text-5xl font-semibold">Featured Projects</h1>
+  <div class="w-full">
+    <h1 class="text-center text-5xl font-bold">Featured Projects</h1>
 
     <!-- Projects Collection -->
     <div class="grid grid-cols-2 gap-5 px-20 mt-10">
@@ -12,10 +12,10 @@
       <ng-container *ngFor="let project of allProjects">
         <a [href]="project.repoLink" target="_blank" rel="noopener noreferrer">
           <div
-            class="flex gap-3 items-center w-full bg-white cursor-pointer rounded-md p-3"
+            class="flex gap-3 items-center w-full bg-gray-300 cursor-pointer rounded-md p-3"
           >
             <img
-              class="w-20 h-20 bg-white rounded-md"
+              class="w-20 h-20 p-1 bg-white rounded-md"
               [src]="project.iconLink"
             />
 
@@ -23,7 +23,9 @@
               <p class="font-bold">{{ project.name }}</p>
               <p class="">{{ project.description }}</p>
               <p class="font-semibold mt-1">Technologies Used:</p>
-              <div class="flex flex-wrap gap-1">
+              <div
+                class="flex flex-wrap gap-2 bg-white rounded-md w-fit px-3 py-1"
+              >
                 <ng-container *ngFor="let tech of project.technologies">
                   <img
                     [src]="tech.image"

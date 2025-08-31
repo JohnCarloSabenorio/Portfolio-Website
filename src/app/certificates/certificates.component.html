@@ -1,9 +1,9 @@
 <div
   id="certificates-section"
-  class="w-full flex justify-center items-center bg-red-200"
+  class="app-section w-full flex justify-center items-center h-screen"
 >
-  <div class="w-full py-8">
-    <h1 class="text-center text-5xl font-semibold">Certificates</h1>
+  <div class="w-full">
+    <h1 class="text-center text-5xl font-bold">Certificates</h1>
 
     <div class="flex justify-center items-center gap-5 px-20 mt-10">
       <button>
@@ -18,9 +18,9 @@
       </button>
 
       <div
-        class="rounded-md relative flex flex-col justify-center items-center"
+        class="rounded-md relative flex flex-col justify-center items-center border-black border-2"
       >
-        <div>
+        <div class="border-black">
           <img
             class="h-150 w-250"
             [src]="allCertificates[selectedCertificate].imageLink"

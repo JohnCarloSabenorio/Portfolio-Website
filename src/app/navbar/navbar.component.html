@@ -1,25 +1,46 @@
 <div class="fixed flex justify-center items-center p-3 w-full z-50">
   <div
-    class="flex gap-2 text-md px-5 py-3 rounded-full bg-gray-600/40 backdrop-blur-md text-white"
+    class="flex gap-2 text-md px-5 py-3 rounded-full bg-gray-700/40 backdrop-blur-md text-white"
   >
-    <div class="bg-blue-200 rounded-full px-3 py-1 text-black cursor-pointer">
-      <a href="#intro-section">Me</a>
-    </div>
-    <div class="rounded-full px-3 py-1 cursor-pointer">
-      <a href="#projects-section">Projects</a>
-    </div>
-    <div class="rounded-full px-3 py-1 cursor-pointer">
-      <a href="#skills-section">Skills</a>
-    </div>
-    <div class="rounded-full px-3 py-1 cursor-pointer">
-      <a href="#education-section">Education</a>
-    </div>
-    <div class="rounded-full px-3 py-1 cursor-pointer">
-      <a href="#certificates-section">Certificates</a>
-    </div>
-    <div class="rounded-full px-3 py-1 cursor-pointer">
-      <a href="#journey-section">Journey</a>
-    </div>
+    <a
+      class="rounded-full px-3 py-1 hover:bg-gray-600 hover:text-white cursor-pointer"
+      [class]="viewedComponent == 'intro-section' ? 'bg-gray-800' : ''"
+      (click)="setSelectedOpt(0)"
+      href="#intro-section"
+      >Me</a
+    >
+
+    <a
+      class="rounded-full px-3 py-1 hover:bg-gray-600 hover:text-white cursor-pointer"
+      [class]="viewedComponent == 'projects-section' ? 'bg-gray-800' : ''"
+      (click)="setSelectedOpt(1)"
+      href="#projects-section"
+      >Projects</a
+    >
+
+    <a
+      class="rounded-full px-3 py-1 hover:bg-gray-600 hover:text-white cursor-pointer"
+      [class]="viewedComponent == 'skills-section' ? 'bg-gray-800' : ''"
+      (click)="setSelectedOpt(2)"
+      href="#skills-section"
+      >Skills</a
+    >
+
+    <a
+      class="rounded-full px-3 py-1 hover:bg-gray-600 hover:text-white cursor-pointer"
+      [class]="viewedComponent == 'certificates-section' ? 'bg-gray-800' : ''"
+      (click)="setSelectedOpt(3)"
+      href="#certificates-section"
+      >Certificates</a
+    >
+
+    <a
+      class="rounded-full px-3 py-1 hover:bg-gray-600 hover:text-white cursor-pointer"
+      [class]="viewedComponent == 'experience-section' ? 'bg-gray-800' : ''"
+      (click)="setSelectedOpt(4)"
+      href="#experience-section"
+      >My Journey</a
+    >
     <!-- <a>Bio</a>
     <a>Projects</a>
     <a>Skills</a>
