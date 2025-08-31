@@ -8,7 +8,7 @@ import { Component, Input } from '@angular/core';
 })
 export class IntroComponent {
   downloadResume() {
-    const fileURL = 'files/Sabenorio_Resume.pdf';
+    const fileURL = '/files/Sabenorio_Resume.pdf';
 
     // Create anchor
     const a = document.createElement('a');
