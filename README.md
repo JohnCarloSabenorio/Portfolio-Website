@@ -1,59 +1,53 @@
-# PortfolioWebsite
+# Portfolio Website
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
+A personal **portfolio website** built with **Angular**, showcasing my journey as a developer, my projects, technical skills, and achievements. The website serves as a digital introduction to who I am and what I can do, providing recruiters, collaborators, and visitors with a clear view of my work and experiences.
 
-## Development server
+## 🌐 Live Demo
+[Visit Portfolio Website](#) <!-- Replace with your deployed link -->
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
-```
+## 📖 Features
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### 👤 About Me
+- A brief introduction about who I am.
+- Highlights my goals and professional background.
 
-## Code scaffolding
+### 💻 Projects
+- Showcases my personal and academic projects.
+- Provides descriptions, technologies used, and links to source code or demos.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### 🛠 Skills
+- Lists the programming languages, frameworks, and tools I’m experienced with.
+- Categorized for better readability.
 
-```bash
-ng generate component component-name
-```
+### 📜 Certificates
+- Displays certifications I have earned to validate my skills and knowledge.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### 📈 My Journey
+- A timeline of my learning and career path.
+- Highlights important milestones in my growth as a developer.
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+## 🛠️ Technologies Used
+- **Angular** – Frontend framework
+- **TypeScript** – Primary language
+- **HTML5 & CSS3** – Structure and styling
+- **JavaScript** – Interactivity
+- **Bootstrap / Tailwind (if used)** – Styling and responsiveness
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+## 🚀 Getting Started
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+### Prerequisites
+Make sure you have the following installed:
+- [Node.js](https://nodejs.org/)
+- [Angular CLI](https://angular.io/cli)
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/portfolio-website.git
+   cd portfolio-website
