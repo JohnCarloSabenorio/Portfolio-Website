@@ -10,7 +10,7 @@
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 -960 960 960"
-          class="fill-white w-20 h-20 cursor-pointer hover:fill-black"
+          class="fill-gray-800 w-20 h-20 cursor-pointer hover:fill-black"
           (click)="goToPrevCertificate()"
         >
           <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
@@ -30,7 +30,7 @@
         <div class="w-full bg-gray-600/40 h-15 p-1 flex gap-3">
           <ng-container *ngFor="let cert of allCertificates; let i = index">
             <img
-              class="h-full w-20 rounded-md cursor-pointer border-black hover:border-2"
+              class="h-full rounded-md cursor-pointer border-black hover:border-2"
               [src]="cert.imageLink"
               [class]="selectedCertificate == i ? 'border-2' : 'border-0'"
               (click)="setSelectedCertificate(i)"
@@ -48,7 +48,7 @@
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 -960 960 960"
-          class="fill-white w-20 h-20 cursor-pointer hover:fill-black"
+          class="fill-gray-800 w-20 h-20 cursor-pointer hover:fill-black"
           (click)="goToNextCertificate()"
         >
           <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
