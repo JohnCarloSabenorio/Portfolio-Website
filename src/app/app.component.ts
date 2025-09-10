@@ -34,29 +34,33 @@ export class AppComponent implements AfterViewInit {
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
   ngAfterViewInit(): void {
     if (isPlatformBrowser(this.platformId)) {
-      const sections = document.querySelectorAll('.app-section');
+      setTimeout(() => {
+        const sections = document.querySelectorAll('.app-section');
 
-      console.log('app sections:', sections);
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                this.viewedComponent = entry.target.id;
+                console.log('Changed to:', this.viewedComponent);
+              }
+            });
+          },
+          {
+            threshold: 0.25, // lower so intro can also be counted
+            rootMargin: '0px 0px -20% 0px',
+          }
+        );
 
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            console.log('the target id:', entry.target.id);
+        sections.forEach((section) => observer.observe(section));
 
-            if (entry.isIntersecting) {
-              console.log('app sections:', sections);
-              this.viewedComponent = entry.target.id;
-              console.log('changed to:', this.viewedComponent);
-            }
-          });
-        },
-        {
-          threshold: 0.25,
-          rootMargin: '0px 0px -20% 0px',
+        // 👇 Manually set intro as default active
+        const first = sections[0] as HTMLElement;
+        if (first) {
+          this.viewedComponent = first.id;
+          console.log('Initially set to:', this.viewedComponent);
         }
-      );
-
-      sections.forEach((section) => observer.observe(section));
+      }, 0);
     }
   }
 
