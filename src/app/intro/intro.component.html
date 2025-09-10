@@ -2,123 +2,10 @@
   id="intro-section"
   class="app-section w-full min-h-screen flex justify-center items-center"
 >
-  <!-- Bottom Layer -->
-  <!-- <div class="flex relative bg-red-200 py-28">
-    <div class="flex-1 flex flex-col justify-center pl-2">
-      <h1 class="text-8xl">Hi!</h1>
-      <h1 class="text-8xl">My name is John Carlo</h1>
-      <p class="mt-5">
-        I graduated with a Bachelor of Science in Computer Science from Lyceum
-        of the Philippines University – Cavite. As an aspiring developer, I am
-        passionate about building scalable and user-friendly web applications.
-        With hands-on experience in full stack development, API design, and
-        database management, I enjoy transforming complex ideas into clean,
-        functional solutions.
-      </p>
-
-      <p class="mt-5 text-5xl">
-        My Mission: To grow every day and become the best version of myself.
-      </p>
-    </div>
-    <div class="flex-1 flex flex-col justify-center items-center relative">
-      <div
-        class="w-100 h-100 p-5 border-1 border-blue-800 rounded-full relative mt-5"
-      >
-        <img
-          src="/images/formal.JPG"
-          class="w-full h-full rounded-full object-cover object-top"
-          alt="Profile picture"
-        />
-        <div
-          class="bg-white w-fit px-5 py-2 rounded-full absolute flex items-center justify-center -right-30 bottom-10"
-        >
-          <img src="images/icons/lightbulb.png" class="w-7 h-7" />
-          <p class="font-bold">Available for new opportunities</p>
-        </div>
-        <div
-          class="bg-white w-fit px-5 py-2 rounded-full absolute flex items-center justify-center -right-30 bottom-50"
-        >
-          <img src="images/icons/brain.png" class="w-7 h-7" />
-          <p class="font-bold">Growth Mindset</p>
-        </div>
-        <div
-          class="bg-white w-fit px-5 py-2 rounded-full absolute flex items-center justify-center -left-20 bottom-30"
-        >
-          <img src="images/icons/puzzle-piece.png" class="w-7 h-7" />
-          <p class="font-bold">Adaptability</p>
-        </div>
-        <div
-          class="bg-white w-fit px-5 py-2 rounded-full absolute flex items-center justify-center -left-18 bottom-70"
-        >
-          <img src="images/icons/problem-solver.png" class="w-7 h-7" />
-          <p class="font-bold">Problem Solver</p>
-        </div>
-      </div>
-      <div class="flex flex-col justify-center mt-5">
-        <div class="flex justify-center p-0 m-0">
-          <img class="w-50" src="images/mern.png" />
-        </div>
-        <h1 class="text-center text-5xl">Full Stack Developer</h1>
-        <button
-          class="mt-5 bg-blue-800 rounded-md text-white px-5 py-3 cursor-pointer"
-        >
-          Download My Resume
-        </button>
-
-        <div class="flex gap-3"><button></button></div>
-      </div>
-    </div>
-    <div
-      class="flex-1 flex flex-col justify-center items-center bg-green-200 rounded-tl-full rounded-bl-full pr-2"
-    >
-      <div>
-        <h1 class="text-center text-5xl font-semibold">Get in Touch</h1>
-        <p class="text-center text-lg text-gray-600 mt-2">
-          I’d love to connect and discuss opportunities.
-        </p>
-        <div class="flex flex-col items-center justify-center gap-5 mt-5">
-          <div
-            class="flex items-center justify-between w-full bg-white rounded-full px-5 py-2"
-          >
-            <a href="#" class="text-xl font-semibold">View my LinkedIn</a>
-            <img
-              class="w-13 h-13"
-              src="images/icons/linkedin.png"
-              alt="LinkedIn"
-            />
-          </div>
-          <div
-            class="flex items-center justify-between w-full bg-white rounded-full px-5 py-2"
-          >
-            <a href="#" class="text-xl font-semibold">Send me an email</a>
-            <img class="w-13 h-13" src="images/icons/gmail.png" />
-          </div>
-          <div
-            class="flex items-center justify-between w-full bg-white rounded-full px-5 py-2"
-          >
-            <a href="#" class="text-xl font-semibold">View my repository</a>
-            <img class="w-13 h-13" src="images/icons/github.png" />
-          </div>
-          <div
-            class="flex items-center justify-between w-full bg-white rounded-full px-5 py-2"
-          >
-            <a href="#" class="text-xl font-semibold">Message me on Discord</a>
-            <img class="w-13 h-13" src="images/icons/discord.png" />
-          </div>
-        </div>
-      </div>
-      <div>
-        <button>
-          <img src="" />
-        </button>
-      </div>
-    </div>
-  </div> -->
-
   <!-- Top Layer -->
-  <div class="flex py-28">
+  <div class="flex">
     <!-- Left Container -->
-    <div class="flex-1 flex flex-col justify-center pl-2">
+    <div class="flex-1 flex-col justify-center pl-2 hidden lg:flex">
       <h1 class="text-8xl">Hi!</h1>
       <h1 class="text-8xl">My name is John Carlo</h1>
       <p class="mt-5">
@@ -144,34 +31,33 @@
           alt="Profile picture"
         />
         <div
-          class="bg-gray-600 text-white w-fit px-5 py-2 rounded-full absolute flex items-center justify-center -right-30 bottom-10"
+          class="bg-gray-600 text-white w-fit px-2 lg:px-5 py-2 rounded-full absolute flex items-center justify-center right-6 lg:-right-50 bottom-10"
         >
           <img src="images/icons/lightbulb.png" class="w-7 h-7" />
-          <p class="font-bold">Available for new opportunities</p>
+          <p class="font-bold hidden lg:block">
+            Available for new opportunities
+          </p>
         </div>
         <div
-          class="bg-gray-600 text-white w-fit px-5 py-2 rounded-full absolute flex items-center justify-center gap-1 -right-30 bottom-50"
+          class="bg-gray-600 text-white w-fit px-2 lg:px-5 py-2 rounded-full absolute flex items-center justify-center gap-1 -right-7 lg:-right-30 bottom-50"
         >
           <img src="images/icons/brain.png" class="w-7 h-7" />
-          <p class="font-bold">Growth Mindset</p>
+          <p class="font-bold hidden lg:block">Growth Mindset</p>
         </div>
         <div
-          class="bg-gray-600 text-white w-fit px-5 py-2 rounded-full absolute flex items-center justify-center -left-20 bottom-30"
+          class="bg-gray-600 text-white w-fit px-2 lg:px-5 py-2 rounded-full absolute flex items-center justify-center gap-1 -left-5 lg:-left-20 bottom-30"
         >
           <img src="images/icons/puzzle-piece.png" class="w-7 h-7" />
-          <p class="font-bold">Adaptability</p>
+          <p class="font-bold hidden lg:block">Adaptability</p>
         </div>
         <div
-          class="bg-gray-600 text-white w-fit px-5 py-2 rounded-full absolute flex items-center justify-center -left-18 bottom-70"
+          class="bg-gray-600 text-white w-fit px-2 lg:px-5 py-2 rounded-full absolute flex items-center justify-center gap-1 left-0 lg:-left-18 bottom-70"
         >
           <img src="images/icons/problem-solver.png" class="w-7 h-7" />
-          <p class="font-bold">Problem Solver</p>
+          <p class="font-bold hidden lg:block">Problem Solver</p>
         </div>
       </div>
       <div class="flex flex-col justify-center mt-5">
-        <div class="flex justify-center p-0 m-0">
-          <img class="w-50" src="images/mern.png" />
-        </div>
         <h1 class="text-center text-5xl">Full Stack Developer</h1>
         <button
           class="mt-5 bg-gray-800 cursor-pointer hover:bg-gray-300 hover:text-black rounded-md text-white px-5 py-3"
@@ -186,7 +72,7 @@
       <button>Download My Resume</button> -->
     </div>
     <div
-      class="flex-1 flex flex-col justify-center items-center bg-gray-300 rounded-tl-full rounded-bl-full pr-2"
+      class="flex-1 hidden lg:flex flex-col justify-center items-center bg-gray-300 rounded-tl-full rounded-bl-full pr-2"
     >
       <div>
         <h1 class="text-center text-5xl font-semibold">Get in Touch</h1>

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -9,6 +9,7 @@ import { Component, Input } from '@angular/core';
 export class NavbarComponent {
   @Input() viewedComponent?: string;
   selectedOpt: number = 0;
+  @Output() clickEvent = new EventEmitter<string>();
 
   setSelectedOpt(n: number) {
     this.selectedOpt = n;
