@@ -161,6 +161,14 @@ export class SkillsService {
       categoryIndex: 2,
     },
     {
+      title: 'ASP.NET',
+      image: 'images/icons/aspnet-icon.png',
+      category: 'Frameworks & Libraries',
+      subCategory: 'Backend',
+      alt: 'ASP.net Icon',
+      categoryIndex: 2,
+    },
+    {
       title: 'Socket.io',
       image: 'images/icons/socket-icon.png',
       category: 'Frameworks & Libraries',
@@ -220,6 +228,14 @@ export class SkillsService {
       category: 'Databases & Storage',
       subCategory: 'Relational',
       alt: 'Postgres Icon',
+      categoryIndex: 3,
+    },
+    {
+      title: 'MS SQL',
+      image: 'images/icons/mssql-icon.png',
+      category: 'Databases & Storage',
+      subCategory: 'Relational',
+      alt: 'MS SQL Icon',
       categoryIndex: 3,
     },
     {
