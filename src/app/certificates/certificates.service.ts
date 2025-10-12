@@ -19,11 +19,6 @@ export class CertificatesService {
       imageLink: 'images/certificates/isite-cert.jpg',
     },
     {
-      title: 'LeenTech Network Solution - OJT',
-      date: new Date(2025, 10, 10),
-      imageLink: 'images/certificates/leentech-cert.png',
-    },
-    {
       title: 'CISCO Networking Academy - Operating Systems Basics',
       date: new Date(2024, 5, 30),
       imageLink: 'images/certificates/os-cert.jpg',
