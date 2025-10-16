@@ -110,6 +110,27 @@ export class ProjectsService {
       iconLink: 'images/logos/jconnect-logo.png',
       repoLink: 'https://github.com/JohnCarloSabenorio/JConnect',
     },
+    {
+      name: 'GameVault (In Progress)',
+      description:
+        'A full-stack web app that lets users catalog, rate, and discuss video games with other people who share similar interests.',
+      summary:
+        'JConnect is a real-time chat application designed for instant and seamless communication. It supports one-on-one and group conversations, as well as live user presence indicators. Built with WebSockets, it ensures low-latency message delivery and synchronized communication across devices. The platform demonstrates knowledge in socket-based programming and real-time systems, with features aimed at delivering a smooth messaging experience.',
+      dateAccomplished: new Date(),
+      imageLinks: [],
+      technologies: [
+        { name: 'HTML', image: 'images/icons/html-icon.png' },
+        { name: 'CSS', image: 'images/icons/css-icon.png' },
+        { name: 'JavaScript', image: 'images/icons/js-icon.png' },
+        { name: 'React.js', image: 'images/icons/react-icon.png' },
+        { name: 'TailwindCSS', image: 'images/icons/tailwind-icon.png' },
+        { name: 'ASP.Net', image: 'images/icons/aspnet-icon.png' },
+        { name: 'MS SQL Server', image: 'images/icons/mssql-icon.png' },
+        { name: 'Swagger', image: 'images/icons/swagger-icon.png' },
+      ],
+      iconLink: 'images/logos/gamevault-logo.png',
+      repoLink: 'https://github.com/JohnCarloSabenorio/JConnect',
+    },
   ];
 
   getAllProjects() {

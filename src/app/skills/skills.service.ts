@@ -321,7 +321,7 @@ export class SkillsService {
     {
       title: 'PowerShell',
       image: 'images/icons/powershell-icon.png',
-      category: 'Collaboration & Productivity Tools',
+      category: 'Tools',
       subCategory: 'Scripting / Automation',
       alt: 'PowerShell Icon',
       categoryIndex: 7,
@@ -329,7 +329,7 @@ export class SkillsService {
     {
       title: 'Git',
       image: 'images/icons/git-icon.png',
-      category: 'Collaboration & Productivity Tools',
+      category: 'Tools',
       subCategory: 'Version Control',
       alt: 'Git Icon',
       categoryIndex: 7,
@@ -337,7 +337,7 @@ export class SkillsService {
     {
       title: 'GitHub',
       image: 'images/icons/github-icon.png',
-      category: 'Collaboration & Productivity Tools',
+      category: 'Tools',
       subCategory: 'Version Control Hosting',
       alt: 'GitHub Icon',
       categoryIndex: 7,
@@ -345,7 +345,7 @@ export class SkillsService {
     {
       title: 'Notion',
       image: 'images/icons/notion-icon.png',
-      category: 'Collaboration & Productivity Tools',
+      category: 'Tools',
       subCategory: 'Documentation / Notes',
       alt: 'Notion Icon',
       categoryIndex: 7,
@@ -353,7 +353,7 @@ export class SkillsService {
     {
       title: 'Postman',
       image: 'images/icons/postman-icon.png',
-      category: 'Collaboration & Productivity Tools',
+      category: 'Tools',
       subCategory: 'API Testing',
       alt: 'Postman Icon',
       categoryIndex: 7,
@@ -361,9 +361,25 @@ export class SkillsService {
     {
       title: 'Trello',
       image: 'images/icons/trello-icon.png',
-      category: 'Collaboration & Productivity Tools',
+      category: 'Tools',
       subCategory: 'Project Management',
       alt: 'Trello Icon',
+      categoryIndex: 7,
+    },
+    {
+      title: 'Stripe',
+      image: 'images/icons/stripe-icon.png',
+      category: 'Tools',
+      subCategory: 'Payment Processing',
+      alt: 'Stripe Icon',
+      categoryIndex: 7,
+    },
+    {
+      title: 'Swagger',
+      image: 'images/icons/swagger-icon.png',
+      category: 'Tools',
+      subCategory: 'API Testing',
+      alt: 'Stripe Icon',
       categoryIndex: 7,
     },
   ];
