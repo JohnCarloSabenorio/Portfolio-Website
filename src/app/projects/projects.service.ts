@@ -111,7 +111,7 @@ export class ProjectsService {
       repoLink: 'https://github.com/JohnCarloSabenorio/JConnect',
     },
     {
-      name: 'GameVault (In Progress)',
+      name: 'GameVault (In Development)',
       description:
         'A full-stack web app that lets users catalog, rate, and discuss video games with other people who share similar interests.',
       summary:
