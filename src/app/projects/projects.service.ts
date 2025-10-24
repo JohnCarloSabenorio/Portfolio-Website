@@ -70,7 +70,7 @@ export class ProjectsService {
     {
       name: 'Natours',
       description:
-        'A Node.js/Express.js tour booking system with authentication, RESTful APIs, and MVC architecture.',
+        'A guided Node.js/Express.js project implementing a tour booking system with authentication, RESTful APIs, and MVC architecture.',
       summary:
         'Natours is a tour reservation and booking application developed as part of a Node.js and Express.js bootcamp project. It allows users to explore available tours, view detailed information, make reservations, and manage bookings. The system implements RESTful APIs, user authentication, secure data handling, and follows the MVC architecture for maintainability. This project served as a practical exercise to strengthen backend web development skills in building scalable applications.',
       dateAccomplished: new Date(),
