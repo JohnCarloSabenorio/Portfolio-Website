@@ -107,7 +107,7 @@ export class ProjectsService {
         { name: 'TailwindCSS', image: 'images/icons/tailwind-icon.png' },
         { name: 'Redux', image: 'images/icons/redux-icon.png' },
       ],
-      iconLink: 'images/logos/jconnect-logo.png',
+      iconLink: 'images/logos/jconnect-logo.jpeg',
       repoLink: 'https://github.com/JohnCarloSabenorio/JConnect',
     },
     {
@@ -128,7 +128,7 @@ export class ProjectsService {
         { name: 'MS SQL Server', image: 'images/icons/mssql-icon.png' },
         { name: 'Swagger', image: 'images/icons/swagger-icon.png' },
       ],
-      iconLink: 'images/logos/gamevault-logo.png',
+      iconLink: 'images/logos/gamevault-logo.jpeg',
       repoLink: 'https://github.com/JohnCarloSabenorio/JConnect',
     },
   ];
