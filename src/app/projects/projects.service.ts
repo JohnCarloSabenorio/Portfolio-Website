@@ -25,7 +25,7 @@ export class ProjectsService {
         { name: 'C#', image: 'images/icons/csharp-icon.png' },
         { name: 'Vuforia', image: 'images/icons/vuforia-icon.jpg' },
       ],
-      iconLink: 'images/logos/partnar-logo.jpeg',
+      iconLink: 'images/logos/partnar-logo.png',
       repoLink: 'https://github.com/JohnCarloSabenorio/PartnAR-CMS',
     },
     {
@@ -107,7 +107,7 @@ export class ProjectsService {
         { name: 'TailwindCSS', image: 'images/icons/tailwind-icon.png' },
         { name: 'Redux', image: 'images/icons/redux-icon.png' },
       ],
-      iconLink: 'images/logos/jconnect-logo.jpeg',
+      iconLink: 'images/logos/jconnect-logo.png',
       repoLink: 'https://github.com/JohnCarloSabenorio/JConnect',
     },
     {
@@ -128,7 +128,7 @@ export class ProjectsService {
         { name: 'MS SQL Server', image: 'images/icons/mssql-icon.png' },
         { name: 'Swagger', image: 'images/icons/swagger-icon.png' },
       ],
-      iconLink: 'images/logos/gamevault-logo.jpeg',
+      iconLink: 'images/logos/gamevault-logo.png',
       repoLink: 'https://github.com/JohnCarloSabenorio/JConnect',
     },
   ];
