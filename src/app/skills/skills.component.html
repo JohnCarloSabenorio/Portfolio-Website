@@ -6,7 +6,9 @@
 
   <div class="bg-gray-400 rounded-md overflow-hidden max-w-300 mt-5">
     <!-- Categories -->
-    <div class="flex flex-wrap justify-evenly w-full gap-3 bg-gray-800 p-5">
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-evenly w-full gap-3 bg-gray-800 p-5"
+    >
       <ng-container *ngFor="let key of categoryKeys">
         <app-category
           [label]="categories[key]"

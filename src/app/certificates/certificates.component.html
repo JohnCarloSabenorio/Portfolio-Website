@@ -37,10 +37,12 @@
           </button>
         </div>
       </div>
-      <div class="w-full lg:w-250 bg-black h-15 flex flex-wrap p-1 gap-3">
+      <div
+        class="w-full lg:w-250 bg-black h-fit justify-center flex flex-wrap p-1 gap-3"
+      >
         <ng-container *ngFor="let cert of allCertificates; let i = index">
           <img
-            class="h-full rounded-md cursor-pointer border-black hover:border-2"
+            class="h-15 rounded-md cursor-pointer border-black hover:border-2"
             [src]="cert.imageLink"
             [class]="selectedCertificate == i ? 'border-2' : 'border-0'"
             (click)="setSelectedCertificate(i)"

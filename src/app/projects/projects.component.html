@@ -6,34 +6,39 @@
     <h1 class="text-center text-5xl font-bold">Featured Projects</h1>
 
     <!-- Projects Collection -->
-    <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-5 sm:px-10 lg:px-20 mt-10">
+    <div
+      class="grid sm:grid-cols-1 lg:grid-cols-2 gap-5 sm:px-10 lg:px-20 mt-10"
+    >
       <!-- Scrollable Div -->
 
       <ng-container *ngFor="let project of allProjects">
         <a [href]="project.repoLink" target="_blank" rel="noopener noreferrer">
           <div
-            class="flex gap-3 items-center w-full bg-gray-300 cursor-pointer rounded-md p-3"
+            class="flex flex-col sm:flex-row gap-3 items-center w-full bg-gray-300 cursor-pointer rounded-md p-3"
           >
             <img
               class="w-20 h-20 p-1 bg-white rounded-md"
               [src]="project.iconLink"
             />
 
-            <div class="flex flex-col">
+            <div class="flex flex-col text-center sm:text-left">
               <p class="font-bold">{{ project.name }}</p>
               <p class="">{{ project.description }}</p>
               <p class="font-semibold mt-1">Technologies Used:</p>
-              <div
-                class="flex flex-wrap gap-2 bg-white rounded-md w-fit px-3 py-1"
-              >
-                <ng-container *ngFor="let tech of project.technologies">
-                  <img
-                    [src]="tech.image"
-                    class="w-7 h-7"
-                    [alt]="tech.name"
-                    [title]="tech.name"
-                  />
-                </ng-container>
+
+              <div class="flex justify-center sm:justify-start">
+                <div
+                  class="flex flex-wrap gap-2 justify-center bg-white rounded-md w-fit px-3 py-1"
+                >
+                  <ng-container *ngFor="let tech of project.technologies">
+                    <img
+                      [src]="tech.image"
+                      class="w-7 h-7"
+                      [alt]="tech.name"
+                      [title]="tech.name"
+                    />
+                  </ng-container>
+                </div>
               </div>
             </div>
           </div>
