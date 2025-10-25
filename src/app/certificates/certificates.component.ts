@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CertificatesService } from './certificates.service';
 import { Certificate } from './certificate.model';
 import { NgForOf } from '@angular/common';
+
 @Component({
   selector: 'app-certificates',
   imports: [NgForOf],
