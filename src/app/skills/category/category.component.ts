@@ -2,7 +2,6 @@ import { Component, Signal, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-category',
-  imports: [],
   templateUrl: './category.component.html',
   styleUrl: './category.component.css',
 })

@@ -2,12 +2,12 @@ import { Component, signal } from '@angular/core';
 import { CategoryComponent } from './category/category.component';
 import { SkillsService } from './skills.service';
 import { Skill } from './skill.model';
-import { NgForOf } from '@angular/common';
+import { NgForOf, NgClass } from '@angular/common';
 import { BadgeComponent } from './badge/badge.component';
 
 @Component({
   selector: 'app-skills',
-  imports: [CategoryComponent, NgForOf, BadgeComponent],
+  imports: [CategoryComponent, NgForOf, BadgeComponent, NgClass],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.css',
 })
@@ -28,7 +28,15 @@ export class SkillsComponent {
   }
 
   changeSelectedCategory(idx: number) {
+    console.log('the category idx:', idx);
+    console.log('current idx:', this.selectedCategory);
     this.selectedCategory = idx;
+  }
+  changeSelectedCategoryEvent(event: Event) {
+    const selectElement = event.target as HTMLSelectElement;
+    const selectedKey = selectElement.value;
+
+    this.selectedCategory = +selectedKey;
   }
 
   getFilteredCategory(category: String) {
