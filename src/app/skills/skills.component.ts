@@ -13,23 +13,19 @@ import { BadgeComponent } from './badge/badge.component';
 })
 export class SkillsComponent {
   selectedCategory = 1;
-  allSkills: { [key: string]: Skill[] } = {};
+  allSkills: Skill[] = [];
 
   categories: { [key: number]: String };
   categoryKeys: number[] = [];
 
   constructor(private skillsService: SkillsService) {
-    this.allSkills = skillsService.getCategorizedSkills();
+    this.allSkills = skillsService.getAllSkills();
     this.categories = skillsService.getCategories();
 
     this.categoryKeys = Object.keys(this.categories).map((key) => Number(key));
-    console.log('CATEGORIES:', this.categories);
-    console.log('ALL SKILLS:', this.allSkills);
   }
 
   changeSelectedCategory(idx: number) {
-    console.log('the category idx:', idx);
-    console.log('current idx:', this.selectedCategory);
     this.selectedCategory = idx;
   }
   changeSelectedCategoryEvent(event: Event) {

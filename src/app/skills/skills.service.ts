@@ -394,6 +394,10 @@ export class SkillsService {
     return skillsObj;
   }
 
+  getAllSkills() {
+    return this.skills;
+  }
+
   getFilteredCategory(category: String) {
     return this.skills.filter((skill) => skill.category == category);
   }

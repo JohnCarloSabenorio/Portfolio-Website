@@ -4,4 +4,5 @@ export interface Skill {
   alt: String;
   category: String;
   subCategory: String;
+  categoryIndex: number;
 }

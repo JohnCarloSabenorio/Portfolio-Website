@@ -10,4 +10,6 @@ export class BadgeComponent {
   @Input({ required: true }) image!: String;
   @Input({ required: true }) alt!: String;
   @Input({ required: true }) label!: String;
+  @Input({ required: true }) categoryIndex!: number;
+  @Input({ required: true }) selectedCategory!: number;
 }
