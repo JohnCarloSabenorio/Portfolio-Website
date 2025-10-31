@@ -256,6 +256,14 @@ export class SkillsService {
       alt: 'Netlify Icon',
       categoryIndex: 5,
     },
+    {
+      title: 'Docker',
+      image: 'images/icons/docker-icon.png',
+      category: 'Deployment',
+      subCategory: 'Containerization',
+      alt: 'Docker Icon',
+      categoryIndex: 5,
+    },
 
     // 📊 Data Science & Machine Learning
     {
