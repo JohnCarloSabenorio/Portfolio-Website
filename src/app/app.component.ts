@@ -11,6 +11,7 @@ import { Sign } from 'crypto';
 import { AfterViewInit } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { EventEmitter } from 'stream';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -32,7 +33,12 @@ export class AppComponent implements AfterViewInit {
   viewedComponent: string = 'intro-section';
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+
   ngAfterViewInit(): void {
+    AOS.init({
+      duration: 1200,
+      once: true,
+    });
     if (isPlatformBrowser(this.platformId)) {
       setTimeout(() => {
         const sections = document.querySelectorAll('.app-section');

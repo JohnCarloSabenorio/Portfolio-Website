@@ -14,4 +14,5 @@ export class ProjectsComponent {
     this.allProjects = projectsService.getAllProjects();
     console.log('All Projects:', this.allProjects);
   }
+
 }

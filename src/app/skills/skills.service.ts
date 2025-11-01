@@ -119,14 +119,6 @@ export class SkillsService {
       categoryIndex: 2,
     },
     {
-      title: 'React Router',
-      image: 'images/icons/reactrouter-icon.png',
-      category: 'Libraries',
-      subCategory: 'Frontend',
-      alt: 'React Router Icon',
-      categoryIndex: 3,
-    },
-    {
       title: 'Redux',
       image: 'images/icons/redux-icon.png',
       category: 'Libraries',

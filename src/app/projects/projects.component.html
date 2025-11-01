@@ -1,20 +1,25 @@
 <div
   id="projects-section"
-  class="app-section flex justify-center items-center min-h-screen"
+  class="app-section flex justify-center items-center min-h-screen bg-linear-to-b from-white to-green-200"
 >
-  <div class="w-full">
+  <div
+    class="w-full"
+    data-aos="fade-up"
+    data-aos="fade-down"
+    data-aos-duration="1000"
+  >
     <h1 class="text-center text-5xl font-bold">Featured Projects</h1>
 
     <!-- Projects Collection -->
     <div
-      class="grid sm:grid-cols-1 lg:grid-cols-2 gap-5 sm:px-10 lg:px-20 mt-10"
+      class="grid sm:grid-cols-1 lg:grid-cols-2 gap-5 sm:px-10 lg:px-20 mt-10 animate-fadeUp"
     >
-      <!-- Scrollable Div -->
-
       <ng-container *ngFor="let project of allProjects">
         <a [href]="project.repoLink" target="_blank" rel="noopener noreferrer">
           <div
             class="flex flex-col sm:flex-row gap-3 items-center w-full bg-gray-300 cursor-pointer rounded-md p-3"
+            data-aos="flip-left"
+            data-aos-duration="1000"
           >
             <img
               class="w-20 h-20 p-1 bg-white rounded-md"

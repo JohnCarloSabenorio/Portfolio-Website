@@ -1,11 +1,5 @@
-import { Component, Input, HostBinding } from '@angular/core';
-import {
-  trigger,
-  state,
-  style,
-  animate,
-  transition,
-} from '@angular/animations';
+import { Component, Input } from '@angular/core';
+
 @Component({
   selector: 'app-intro',
   imports: [],

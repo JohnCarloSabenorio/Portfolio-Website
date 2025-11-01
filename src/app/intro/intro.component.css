@@ -10,7 +10,7 @@
 }
 
 .animate-fadeIn {
-  animation: fadeIn 1.1s ease-out forwards;
+  animation: fadeIn 1.5s ease-out forwards;
 }
 
 @-webkit-keyframes animatetop {
@@ -71,7 +71,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 96%;
+  height: 100%;
   overflow: hidden;
 }
 

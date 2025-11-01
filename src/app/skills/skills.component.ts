@@ -4,7 +4,6 @@ import { SkillsService } from './skills.service';
 import { Skill } from './skill.model';
 import { NgForOf, NgClass } from '@angular/common';
 import { BadgeComponent } from './badge/badge.component';
-
 @Component({
   selector: 'app-skills',
   imports: [CategoryComponent, NgForOf, BadgeComponent, NgClass],
