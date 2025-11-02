@@ -1,9 +1,23 @@
 <div
   id="projects-section"
-  class="app-section flex justify-center items-center min-h-screen bg-gradient-to-bl from-[#ffe4e6] to-[#ccfbf1]"
+  class="app-section flex justify-center items-center py-30 relative bg-gray-400/40"
 >
+  <div class="area">
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
   <div
-    class="w-full"
+    class="w-full h-full"
     data-aos="fade-up"
     data-aos="fade-down"
     data-aos-duration="1000"
@@ -12,7 +26,7 @@
 
     <!-- Projects Collection -->
     <div
-      class="grid sm:grid-cols-1 lg:grid-cols-2 gap-5 sm:px-10 lg:px-20 mt-10 animate-fadeUp"
+      class="grid sm:grid-cols-1 lg:grid-cols-2 gap-5 sm:px-10 lg:px-20 mt-10 animate-fadeUp max-w-400 mx-auto"
     >
       <ng-container *ngFor="let project of allProjects">
         <a [href]="project.repoLink" target="_blank" rel="noopener noreferrer">
