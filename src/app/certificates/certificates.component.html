@@ -33,7 +33,7 @@
       <div
         class="rounded-md relative flex flex-col justify-center items-center"
       >
-        <div class="bg-black border-1">
+        <div class="bg-black rounded-t-md overflow-hidden">
           <button class="absolute top-1/2 -translate-y-1/2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +62,7 @@
         </div>
       </div>
       <div
-        class="w-full lg:w-250 bg-black h-fit justify-center flex flex-wrap p-1 gap-3"
+        class="w-full lg:w-250 bg-black h-fit justify-center flex flex-wrap p-1 gap-3 rounded-b-md"
       >
         <ng-container *ngFor="let cert of allCertificates; let i = index">
           <img
